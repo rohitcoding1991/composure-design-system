@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "babel src --out-dir ./lib --copy-files",
+    "build": "node init && babel src --out-dir ./lib --copy-files",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
