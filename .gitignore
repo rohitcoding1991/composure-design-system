@@ -1,4 +1,6 @@
 node_modules/
-.vscode/
 
 public/
+
+!.env.example
+config.bat

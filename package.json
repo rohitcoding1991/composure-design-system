@@ -4,10 +4,10 @@
   "version": "1.2.2",
   "description": "Uprise ui kit",
   "scripts": {
-    "build": "babel --presets @babel/react --plugins @babel/plugin-proposal-optional-chaining src --out-dir ./lib --copy-files",
+    "build": "node init && babel --presets @babel/react --plugins @babel/plugin-proposal-optional-chaining src --out-dir ./lib --copy-files",
     "deploy-storybook": "storybook-to-ghpages --o ./public",
-    "build-storybook": "build-storybook -c .storybook watch-css -s ./styles -o ./public",
-    "start-storybook": "start-storybook -c .storybook watch-css -s ./styles",
+    "build-storybook": "node init && build-storybook -c .storybook watch-css -s ./styles -o ./public",
+    "start-storybook": "node init && start-storybook -c .storybook watch-css -s ./styles",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "exports": {
